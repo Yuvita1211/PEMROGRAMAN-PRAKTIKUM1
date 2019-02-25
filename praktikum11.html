@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Praktikum 11</title>
+</head>
+
+<body>
+
+    <h3>My first Google Map</h3>
+
+    <div id="map" style="width:400px;background: yellow"></div>
+
+    <script>
+        function myMap(){
+            var mapOptions = {
+                center: new google.maps.LatLng(51.5, -0.12),
+                zoom: 10,
+                mapTypeid: google.maps.mapTypeid.HYBRID
+            }
+            var map =  new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+    </script>
+
+    <script src="https://www.google.com/maps/place/AKN+Kajen/@-7.026933,109.578087,17z/data=!3m1!4b1!4m5!3m4!1s0x2e701fef59b0d429:0xfac6c7437c49ef7e!8m2!3d-7.0269383!4d109.5802757">
+    </script>
+
+</body>
+</html>
